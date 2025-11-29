@@ -18,7 +18,7 @@ dvc repro
 ```
 
 ## Структура проекта
-
+```
 ├── data/                  # данные (хранятся через DVC)
 │   ├── raw/               # сырые данные
 │   └── processed/         # подготовленные данные
@@ -33,12 +33,13 @@ dvc repro
 ├── params.yaml            # параметры обучения и препроцессинга
 ├── requirements.txt       # зависимости
 ├── README.md              # документация
+```
 
 ## Как запустить проект
 1. Склонируйте репозиторий:
 ```bash
 git clone https://github.com/LavrukhinaV/MLOps.git
-cd MLOps
+cd MLOps_HW1
 ```
 2. Создайте и активируйте виртуальное окружение:
 ```bash
