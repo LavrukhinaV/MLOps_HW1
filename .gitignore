@@ -1,7 +1,6 @@
 # Data: игнорируем содержимое, но НЕ .dvc-файлы
-data/**
-!data/.gitignore
-!data/**/*.dvc
+/data/processed
+/data/raw/*.csv
 
 # Python
 __pycache__/
