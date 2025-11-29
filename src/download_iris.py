@@ -1,8 +1,17 @@
 import pandas as pd
 from sklearn.datasets import load_iris
+from pathlib import Path
 
-iris = load_iris(as_frame=True)
-df = iris.frame  # готовый DataFrame со всеми признаками + целевой колонкой
+def main():
+    iris = load_iris(as_frame=True)
+    df = iris.frame  # признаки + target
 
-df.to_csv("data/raw/data.csv", index=False)
-print("Saved to data/raw/data.csv")
+    raw_dir = Path("data/raw")
+    raw_dir.mkdir(parents=True, exist_ok=True)
+
+    out_path = raw_dir / "data.csv"
+    df.to_csv(out_path, index=False)
+    print(f"Saved Iris dataset to {out_path}")
+
+if __name__ == "__main__":
+    main()
