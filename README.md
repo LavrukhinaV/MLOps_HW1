@@ -38,7 +38,7 @@ dvc repro
 ## Как запустить проект
 1. Склонируйте репозиторий:
 ```bash
-git clone https://github.com/LavrukhinaV/MLOps.git
+git clone https://github.com/LavrukhinaV/MLOps_HW1.git
 cd MLOps_HW1
 ```
 2. Создайте и активируйте виртуальное окружение:
